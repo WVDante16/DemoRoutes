@@ -6,7 +6,6 @@ import Content from '../shared/layout/Content';
 
 import {element} from 'prop-types';
 
-
 function App(props) {
   return (
     <div className="App">
@@ -17,7 +16,6 @@ function App(props) {
       <Footer />
     </div>
   );
-
 }
 
 App.propTypes = {
