@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../images/logo.svg';
+import Logo from '../images/Logo.jpg';
 import {Link} from 'react-router-dom';
 
 const Header = (props) => {
@@ -10,7 +10,7 @@ const Header = (props) => {
         <header className="App-header">
             <div className="App-header-logo">
                 <a href={url}>
-                    <img src={logo} className="App-logo" alt="logo" />
+                    <img src={Logo} className="App-logo" alt="logo" />
                 </a>
 
                 <h1>{title}</h1>
