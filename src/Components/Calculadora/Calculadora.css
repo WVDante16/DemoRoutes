@@ -1,0 +1,41 @@
+.container {
+    margin: 0 auto;
+    width: 512px;
+    text-align: center;
+    border: 10px solid #34515e;
+    background: #34515e;
+    border-radius: 10px;
+}
+
+.result input {
+    height: 100px;
+    width: 500px;
+    border: 0px;
+    color: #082934;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.resultadoimagen {
+    background-image: url(../../shared//images/Logo.jpg);
+    background-position:center;
+    border: 0px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(80px, auto);
+}
+
+.keypad input {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.botonimagen {
+    background-image: url(../../shared//images/Logo.jpg);
+    background-repeat:no-repeat;
+    
+    background-position:center;
+}
