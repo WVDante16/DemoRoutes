@@ -1,9 +1,12 @@
 import React, {useRef, useEffect} from 'react';
+import {ReactComponent as ArrowLeft} from '../shared/images/LeftArrow.svg';
+import {ReactComponent as ArrowRight} from '../shared/images/RightArrow.svg';
 import Car0 from '../shared/images/Car0.png';
 import Car1 from '../shared/images/Car1.jpg';
 import Car2 from '../shared/images/Car2.webp';
-import {ReactComponent as ArrowLeft} from '../shared/images/LeftArrow.svg';
-import {ReactComponent as ArrowRight} from '../shared/images/RightArrow.svg';
+import Car3 from '../shared/images/Car3.webp';
+import Car4 from '../shared/images/Car4.png';
+import Car5 from '../shared/images/Car5.jpg';
 import './Slideshow.css';
 
 const Slideshow = () => {
@@ -88,6 +91,15 @@ const Slideshow = () => {
                 </div>
                 <div className="slide">
                     <img src={Car2} resizeMode="stretch" width={1000} />
+                </div>
+                <div className="slide">
+                    <img src={Car3} resizeMode="stretch" width={1000} />
+                </div>
+                <div className="slide">
+                    <img src={Car4} resizeMode="stretch" width={1000} />
+                </div>
+                <div className="slide">
+                    <img src={Car5} resizeMode="stretch" width={1000} />
                 </div>
             </div>
             <div className="controles">

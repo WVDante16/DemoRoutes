@@ -7,6 +7,10 @@
     border-radius: 10px;
 }
 
+.title {
+    font-size: 50px;
+}
+
 .result input {
     height: 100px;
     width: 500px;
@@ -28,7 +32,7 @@
 
 .keypad input {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     margin: 5px;
     border: none;
     border-radius: 5px;
@@ -46,13 +50,136 @@
 }
 
 .resultadoimagen {
-    background-image: url(../../shared//images/Logo.jpg);
+    background-image: url(../../shared//images/Img18.png);
     background-position:center;
     border: 0px;
+    background-size: cover;
+    opacity: 0.75;
 }
 
-.botonimagen {
-    background-image: url(../../shared//images/Logo.jpg);
+.botonClear {
+    background-image: url(../../shared//images/Img17.png);
+    background-position:center;
+    border: 0px;
+    background-size: cover;
+    opacity: 0.75;
+}
+.botonC {
+    background-image: url(../../shared//images/Img15.png);
     background-repeat:no-repeat;
     background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.botonDiv {
+    background-image: url(../../shared//images/Img16.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.botonX {
+    background-image: url(../../shared//images/Img13.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton- {
+    background-image: url(../../shared//images/Img12.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.botonMas {
+    background-image: url(../../shared//images/Img11.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.botonDec {
+    background-image: url(../../shared//images/Img10.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.botonRes {
+    background-image: url(../../shared/images/Img19.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton9 {
+    background-image: url(../../shared/images/Img9.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton8 {
+    background-image: url(../../shared/images/Img8.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton7 {
+    background-image: url(../../shared/images/Img7.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton6 {
+    background-image: url(../../shared/images/Img6.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton5 {
+    background-image: url(../../shared/images/Img5.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton4 {
+    background-image: url(../../shared/images/Img4.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton3 {
+    background-image: url(../../shared/images/Img3.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton2 {
+    background-image: url(../../shared/images/Img2.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton1 {
+    background-image: url(../../shared/images/Img1.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
+}
+.boton0 {
+    background-image: url(../../shared/images/Img0.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    opacity: 0.75;
 }
