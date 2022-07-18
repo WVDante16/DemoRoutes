@@ -11,13 +11,15 @@
     font-size: 30px;
     padding: 40px;
     margin-bottom: 20px;
-    font-weight: bold;
+    font-weight: 800;
     border-radius: 70px;
     height: 400px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 .Pomodoro .alert.large {
-    background-image: url(../../shared//images/Img18.png);
+    background-image: url(../../shared//images/Large.jpg);
     background-position:center;
     border: 0px;
     background-size: cover;
@@ -25,15 +27,27 @@
 }
 
 .Pomodoro .alert.medium {
-    background: #f4ad42;
+    background-image: url(../../shared//images/Medium.jpg);
+    background-position:center;
+    border: 0px;
+    background-size: cover;
+    opacity: 0.75;
 }
 
 .Pomodoro .alert.short {
-    background: #2ba6cb;
+    background-image: url(../../shared//images/Short.jpg);
+    background-position:center;
+    border: 0px;
+    background-size: cover;
+    opacity: 0.75;
 }
 
 .Pomodoro .alert.end {
-    background: #c60f13;
+    background-image: url(../../shared//images/End.png);
+    background-position:center;
+    border: 0px;
+    background-size: cover;
+    opacity: 0.90;
 }
 .Pomodoro button {
     background: #689f38;

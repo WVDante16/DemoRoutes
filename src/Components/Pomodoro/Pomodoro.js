@@ -96,7 +96,7 @@ class Pomodoro extends Component {
             this.setState({
                 alert: {
                     type: 'end',
-                    message: 'SE ACABO! A La Horny Jail!',
+                    message: 'SE ACABO!',
                 }
             })
         }
