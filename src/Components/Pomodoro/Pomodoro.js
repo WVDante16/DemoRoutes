@@ -18,9 +18,9 @@ class Pomodoro extends Component {
         };
 
         this.times = {
-            defaultTime: 1500, //25 min
-            shortBreak: 300, //5 min
-            longBreak: 900, //15 min
+            defaultTime: 1800, //30 min
+            mediumTime: 900, //15 min
+            shortTime: 300, //5 min
         }
     }
 
@@ -36,11 +36,13 @@ class Pomodoro extends Component {
     }
 
     //Buttons
-    setTimeWork = () => {
+
+    //Señora paja
+    setLargeTime = () => {
         this.setState({
             alert: {
-                type: 'work',
-                message: 'WORKING! UnU',
+                type: 'large',
+                message: 'A TRABAJAR! Esa cum no sale sola UwUr',
                 running: true
             },
             running: true
@@ -49,28 +51,30 @@ class Pomodoro extends Component {
         this.setTime(this.times.defaultTime);
     }
 
-    setTimeForShortBreak = () => {
+    //Paja normal
+    setMediumTime = () => {
         this.setState({
             alert: {
-                type: 'shortBreak',
-                message: 'Taking a Short Break UwU',
+                type: 'medium',
+                message: 'Una paja y a dormir UwU',
             },
             running: true
         })
 
-        this.setTime(this.times.shortBreak);
+        this.setTime(this.times.mediumTime);
     }
 
-    setTimeForLongBreak = () => {
+    //Un rapidin
+    setShortTime = () => {
         this.setState({
             alert: {
-                type: 'longBreak',
-                message: 'Taking a Long Break UwUr',
+                type: 'short',
+                message: 'Un hechizo simple, pero inquebrantable OwO',
             },
             running: true
         })
 
-        this.setTime(this.times.longBreak);
+        this.setTime(this.times.shortTime);
     }
 
     setTime = (newTime) => {
@@ -86,12 +90,13 @@ class Pomodoro extends Component {
         this.interval = setInterval(this.countDown, 1000);
     }
 
+    //Contador
     countDown = () => {
         if (this.state.time === 0) {
             this.setState({
                 alert: {
-                    type: 'Beep',
-                    message: 'Beeeeep',
+                    type: 'end',
+                    message: 'SE ACABO! A La Horny Jail!',
                 }
             })
         }
@@ -134,34 +139,30 @@ class Pomodoro extends Component {
 
         return (
             <div className = "Pomodoro">
-                <div className = {`alert ${type}`}>
-                    {message}
-                </div>
-
                 <div className = "timer">
                     {this.displayTimer(time)}
                 </div>
 
                 <div className = "types">
                     <button
-                        className = "start"
-                        onClick = {this.setTimeWork}
+                        className = "large"
+                        onClick = {this.setLargeTime}
                     >
-                        Start Working
+                        Señora Paja
+                    </button>
+
+                    <button
+                        className = "medium"
+                        onClick = {this.setMediumTime}
+                    >
+                        Vladimir
                     </button>
 
                     <button
                         className = "short"
-                        onClick = {this.setTimeForShortBreak}
+                        onClick = {this.setShortTime}
                     >
-                        Short Break
-                    </button>
-
-                    <button
-                        className = "long"
-                        onClick = {this.setTimeForLongBreak}
-                    >
-                        Long Break
+                        Un Rapidin
                     </button>
                 </div>
 
@@ -183,6 +184,10 @@ class Pomodoro extends Component {
                         </div>
                     ) : ''}
                 </span>
+
+                <div className = {`alert ${type}`}>
+                    {message}
+                </div>
             </div>
         )
     }

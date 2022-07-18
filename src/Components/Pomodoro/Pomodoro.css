@@ -1,5 +1,5 @@
 .Pomodoro {
-    padding: 25px
+    padding: 5px
 }
 
 .Pomodoro .timer {
@@ -13,26 +13,31 @@
     margin-bottom: 20px;
     font-weight: bold;
     border-radius: 70px;
+    height: 400px;
 }
 
-.Pomodoro .alert.work {
-    background: #5da654;
+.Pomodoro .alert.large {
+    background-image: url(../../shared//images/Img18.png);
+    background-position:center;
+    border: 0px;
+    background-size: cover;
+    opacity: 0.75;
 }
 
-.Pomodoro .alert.shortBreak {
+.Pomodoro .alert.medium {
     background: #f4ad42;
 }
 
-.Pomodoro .alert.longBreak {
+.Pomodoro .alert.short {
     background: #2ba6cb;
 }
 
-.Pomodoro .alert.Beep {
+.Pomodoro .alert.end {
     background: #c60f13;
 }
 .Pomodoro button {
-    background: #2ba6cb;
-    border: 1px solid #1e728c;
+    background: #689f38;
+    border: 1px solid #387002;
     border-radius: 50px;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     color: white;
@@ -41,21 +46,35 @@
     font-size: 14px;
     font-weight: bold;
     line-height: 1;
-    margin: 50px 10px 0px 10px;
+    margin: 25px 10px 0px 10px;
     padding: 10px 20px 11px;
     position: relative;
     text-align: center;
     text-decoration: none;
 }
 
-.Pomodoro button.start {
-    background-color: #5da423;
-    border: 1px solid #396516;
+.Pomodoro button.large {
+    background-color: #c62828;
+    border: 1px solid #8e0000;
     border-radius: 50px;
 }
 
-.Pomodoro button.short {
-    background-color: #f4ad42;
-    border: 1px solid #dd962a;
+.Pomodoro button.medium {
+    background-color: #ff8f00;
+    border: 1px solid #c56000;
     border-radius: 50px;
+}
+
+.Pomodoro button.pause {
+    background-color: #cfd8dc;
+    border: 1px solid #9ea7aa;
+    border-radius: 50px;
+    margin-bottom: 25px;
+}
+
+.Pomodoro button.restart {
+    background-color: #b0bec5;
+    border: 1px solid #808e95;
+    border-radius: 50px;
+    margin-bottom: 25px;
 }
